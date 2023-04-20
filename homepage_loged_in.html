@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
@@ -9,26 +9,23 @@
 <!-- It would be freaking amazing to: 
 Priority 1:
 + Make quizzes work (user has to choose a correct answer to proceed)
-- Make it impossible to complete lesson before you answer quiz correctly
-- Change progress of lessons when someone completes lessons
++ Make it impossible to complete lesson before you answer quiz correctly
 Priority 2:
 - Log In process
 Priority 3:
 - Change profile picture
+
+Instead I can collect user requests as in previous HW
 -->
 
   <body>
     <h1>Profile</h1>
-    <p>Profile picture here</p>
-    
-    <!-- not sure if I can make it -->
-    <button>Edit profile picture</button>
-
-    <p>Username here</p>
-    <ul>
-      <li>Vocabulary<br>Status Bar: 80%<br><a href="vocabulary_root.html"><button>Go to page</button></a></li>
-      <li>Grammar<br>Status Bar: 80%<br><a href="grammar_root.html"><button>Go to page</button></a></li>
-      </ul>
+    <img id="profilePicture" src="/images/profilePicture.png" alt="Profile picture">    
+    <h3>Username here</h3>
+    <div id="grid">
+      <div>Vocabulary<br><a href="vocabulary_root.html"><button>Go to lessons</button></a></div>
+      <div>Grammar<br><a href="grammar_root.html"><button>Go to page</button></a></div>
+    </div>
     <button>Exit</button>
   </body>
 </html>

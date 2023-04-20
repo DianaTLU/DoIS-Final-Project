@@ -52,12 +52,23 @@ function checkAnswers() {
   }
   var resultContainer = document.getElementById("result");
   resultContainer.innerHTML = "Your score is: " + score;
+  
+  if (score < questions.length) {
+    document.getElementById("btnTrue").disabled = true;
+    document.getElementById("btnTrue").style.opacity = "0.5";
+  } else {
+    document.getElementById("btnTrue").disabled = false;
+    document.getElementById("btnTrue").style.opacity = "1.0";
+  }
+ // document.getElementById("btnTrue").disabled = score < questions.length;
+  // document.getElementById("btnTrue").style.opacity = "0.5";
+
 }
 
 // Call the display quiz function and check answers function in sequence
 displayQuiz();
 
-document.getElementById('btnTrue').disabled = false;   
+
 
 /* I want to add:
 if score is 3, then button.enable
