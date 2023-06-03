@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  </head>
+
+  <body>
+    <h1>Movie Quiz</h1>
+    <div class="col-s-4 block-no-bg clearfix">
+      <img id="homePicture" src="images/profilePicture-01.png" alt="Profile picture">    
+      <!-- i will need it when I add JS code -->
+      <h2>Go get them, tiger!</h2>
+      <p>Let's see how well you know popular movies!</p>
+      <a href="quizIntro.html">
+        <button>Start quiz</button>
+      </a> </br>
+      <button id="randomDog">Randomise dog</button>
+    </div>
+
+    <div class="clearfix">
+      <div class="col-s-7 block-bg">
+        <h2>Results</h2>
+        <p id="recentResult">Recent score: </p>
+        <p id="myProgressScore">Top Score: %</p>
+
+        <!--Progress bar-->
+        <div id="myProgress">
+          <div id="myProgressBar"></div>
+        </div>
+        <p id="absoluteScore"></p>
+        <button id="resetScore">Reset best score</button>
+
+      </div>
+    </div>
+    
+  
+  <script src="home.js"></script>
+  </body>
+</html> 
